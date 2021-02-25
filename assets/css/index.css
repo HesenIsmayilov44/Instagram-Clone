@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fafafa;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+.container{
+    width: 900px;
+    margin: 0px auto;
+    /* border: 1px solid blue; */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+/* Main Section */
+section.main{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 80px;
+}
+section.main .container{
+    display: flex;
+    justify-content: center;
+}
+section.main .container .image{
+    background: url('../images/homePage/Phone.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 400px;
+    /* border: 1px solid red; */
+}
+section.main .container .image .slider{
+    width: 228px;
+    height: 401px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+    transform: translate(128px,78px);
+    animation: slide 15s ease-in-out infinite;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@keyframes slide{
+    0%{
+        background: url("../images/homePage/img1.jpg");
+    }
+    20%{
+        background: url("../images/homePage/img2.jpg");
+    }
+    40%{
+        background: url("../images/homePage/img3.jpg");
+    }
+    60%{
+        background: url("../images/homePage/img4.jpg");
+    }
+    80%{
+        background: url("../images/homePage/img5.jpg");
+    }
+    100%{
+        background: url("../images/homePage/img1.jpg");
+    }
+}
+
+section.main .container .login-form{
+    /* border: 1px solid red; */
+    width: 350px;
+}
+section.main .container .login-form form{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.main .container .login-form form h1{
+    font-family: 'Cookie', cursive;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+section.main .container .login-form form input{
+    margin: 5px 0;
+    width: 100%;
+    border: 0.6px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    outline: none;
+}
+section.main .container .login-form form button{
+    margin: 20px 0;
+    width: 100%;
+    background: #0395f6;
+    padding: 8px 0;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    
+}
+section.main .container .login-form form button:active{
+    background: #4bb5f9;
+}
+section.main .container .login-form form hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+section.main .container .login-form form span{
+    color: rgba(0, 0, 0, 0.5);
+    background: #fff;
+    transform: translateY(-50%);
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+section.main .container .login-form form h3{
+    font-size: 14px;
+    color: #4f6ba7;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+section.main .container .login-form form h3:active{
+    color: #88a3dd;
+}
+section.main .container .login-form form h3 i{
+    font-size: 16px;
+    margin-right: 8px;
+}
+section.main .container .login-form form h5{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+section.main .container .login-form form h5:active{
+    color: rgba(0, 0, 0, 0.4);
+}
+section.main .container .login-form .sign-up{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+section.main .container .login-form .sign-up p{
+    font-size: 14px;
+}
+section.main .container .login-form .sign-up p span{
+    font-weight: 600;
+    color: #39a6f8;
+}
+section.main .container .login-form .sign-up p span:active{
+    color: #81c7f1;
+}
+section.main .container .login-form > span{
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+section.main .container .login-form .mobile-app{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+section.main .container .login-form .mobile-app .download a{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+section.main .container .login-form .mobile-app .iphone{
+    margin-right: 10px;
+}
+section.main .container .login-form .mobile-app .download a i{
+    font-size: 2rem;
+    margin-right: 8px;
+}
+
+section.main .container .login-form .mobile-app .download a span{
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+}
+section.main .container .login-form .mobile-app .download a h1{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* Footer */
+footer{
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    margin: 50px 0;
+}
+footer .container{
+    width: 600px;
+}
+footer .container > ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 30px;
+}
+footer .container > ul li{
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(142, 142, 142);
+    
+}
+footer .container > ul li:active{
+    color: rgba(0, 0, 0, 0.4);
+}
+footer .container > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .container > div{
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(142, 142, 142);
+}
+footer .container > div select{
+    border: none;
+    outline: none;
+    color: rgb(142, 142, 142);
+    background: none;
+    width: 65px;
+    margin-right: 15px;
+}
+footer .container > div select option{
+    color: #000;
+    height: 50px;
+}
